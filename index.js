@@ -1,6 +1,7 @@
 const TelegramBot = require( `node-telegram-bot-api` )
 const TOKEN = `1289072373:AAFZ9m4LvPcO1J2wHSlu0fp82HG3PjeUW4Y`
 const gamemaster = require('./gamemaster.json')
+const gamemaster_pt = require('./gamemaster_pt.json')
 
 const options = {
     webHook: {
@@ -9,7 +10,7 @@ const options = {
   };
 
 const url = process.env.APP_URL || 'https://move-reminder-telegram-bot.herokuapp.com:443';
-const bot = new TelegramBot(TOKEN, options)
+const bot = new TelegramBot(TOKEN, {polling: true})
 bot.setWebHook(`${url}/bot${TOKEN}`);
 
 const capitalize = (str, lower = false) =>
@@ -23,29 +24,31 @@ bot.on('message', (msg) => {
     chat_id = msg.chat.id;
 })
 
+// help
 bot.onText(/\/help/, (msg) => {
     const opts = {
         parse_mode: 'Markdown'
     };
 
     const chatId = msg.chat.id;
-    const resp = `The available commands are:\n\n*/moves <pokemon>* - Get move list for the specified Pokémon.\n*/move <move name>* - Get information about the specified move.\n\nAll data used here comes from *pvpoke.com* - check it out!`
+    const resp = `The available commands are:\n\n*/moves <pokemon>* - Get move list for the specified Pokémon.\n*/move <move name>* - Get information about the specified move.\n\n*Special filters (all used by typing pokemon\_<filter>):*\nalolan _(Alolan forms)_\ngalarian _(Galarian forms)_\nsunny, rainy, snowy _(Castform forms)_\nfrost, heat, wash, mow, fan _(Rotom forms)_\novercast, sunny _(Cherrim forms)_\n\nAll data used here comes from *pvpoke.com* - check it out!`
 
     bot.sendMessage(chatId, resp, opts);
 });
 
-// portuguese
+// portuguese help
 bot.onText(/\/ajuda/, (msg) => {
     const opts = {
         parse_mode: 'Markdown'
     };
 
     const chatId = msg.chat.id;
-    const resp = `Os comandos disponíveis no idioma português são:\n\n*/golpe <nome do golpe>* - Informações sobre o golpe requisitado.\n\nTodos os dados utilizados vêm do *pvpoke.com* - confira!`
+    const resp = `Os comandos disponíveis no idioma português são:\n\n*/golpes <nome do pokémon>* - Informações sobre os golpes do Pokémon requisitado.\n*/golpe <nome do golpe>* - Informações sobre o golpe requisitado.\n\n*Filtros especiais (usados digitando pokemon\_<filtro>):*\nalola _(formas regionais de Alola)_\ngalar _(formas regionais de Galar)_\nsol, chuva, neve _(formas do Castform)_\nfrio, calor, lavagem, corte, ventilador _(formas do Rotom)_\nnublado, sol _(formas do Cherrim)_\n\nTodos os dados utilizados vêm do *pvpoke.com* - confira o site!`
 
     bot.sendMessage(chatId, resp, opts);
 });
 
+// pokemon profile
 bot.onText(/\/moves (.+)/, (msg, match) => {
     const opts = {
         parse_mode: 'Markdown'
@@ -73,6 +76,35 @@ bot.onText(/\/moves (.+)/, (msg, match) => {
     bot.sendMessage(chatId, resp, opts);
 });
 
+// portuguese pokemon profile
+bot.onText(/\/golpes (.+)/, (msg, match) => {
+    const opts = {
+        parse_mode: 'Markdown'
+    };
+
+    const game_data_pokemons = gamemaster_pt.pokemon;
+
+    var pokemon = game_data_pokemons.find(pkmn => pkmn.speciesId === match[1]);
+
+    var name = pokemon.speciesName;
+    var type1 = capitalize(pokemon.types[0]);
+    var type2 = pokemon.types[1] == 'none' ? '' : `/${capitalize(pokemon.types[1])}`;
+    var fast_moves = capitalize(pokemon.fastMoves.join(', ').split('_').join(' ').toLowerCase());
+    var charged_moves = capitalize(pokemon.chargedMoves.join(', ').split('_').join(' ').toLowerCase());
+    var legacy_moves = pokemon.eliteMoves ? capitalize(pokemon.eliteMoves.join(', ').split('_').join(' ').toLowerCase()) : null;
+
+    var pokemon_data = `*${name}*\n${type1}${type2}\n\n*Golpes Rápidos:* ${fast_moves}\n*Golpes Carregados:* ${charged_moves}`
+    if (legacy_moves) pokemon_data += `\n\n*Golpes Legado:* ${legacy_moves}`
+
+    pokemon_data += `\n\n_(Fonte dos Dados: pvpoke.com)_`
+
+    const chatId = msg.chat.id;
+    const resp = pokemon_data;
+
+    bot.sendMessage(chatId, resp, opts);
+});
+
+// move info
 bot.onText(/\/move (.+)/, (msg, match) => {
     const opts = {
         parse_mode: 'Markdown'
@@ -152,14 +184,16 @@ bot.onText(/\/move (.+)/, (msg, match) => {
     bot.sendMessage(chatId, resp, opts);
   });
 
-// move check - portuguese
+// portuguese move info
 bot.onText(/\/golpe (.+)/, (msg, match) => {
     const opts = {
         parse_mode: 'Markdown'
     };
 
-    const game_data_moves = gamemaster.moves;
-    var move = game_data_moves.find(move => move.name === capitalize(match[1]));
+    const game_data_moves = gamemaster_pt.moves;
+    var move = game_data_moves.find(move => move.namePt === capitalize(match[1]));
+    
+    console.log(capitalize(match[1]));
 
     var pokemon_move_data = '';
     var move_category = '';
@@ -211,16 +245,16 @@ bot.onText(/\/golpe (.+)/, (msg, match) => {
             break;
         case 'charged_move_attack_effect':
             pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
-            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_attack} Ataque para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_attack} Ataque para ${move_buff_target} (${move_buff_apply_chance}% de chance)`;
             break;
         case 'charged_move_defense_effect':
             pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
-            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_defense} Defesa para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_defense} Defesa para ${move_buff_target} (${move_buff_apply_chance}% de chance)`;
             break;
         case 'charged_move_dual_effect':
             pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
-            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_attack} Ataque para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
-            pokemon_move_data += `\n${move_buff_defense} Defesa para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_attack} Ataque para ${move_buff_target} (${move_buff_apply_chance}% de chance)`;
+            pokemon_move_data += `\n${move_buff_defense} Defesa para ${move_buff_target} (${move_buff_apply_chance}% de chance)`;
             break;
     }
 
@@ -233,9 +267,10 @@ bot.onText(/\/golpe (.+)/, (msg, match) => {
   });
 
 bot.on('polling_error', (error) => {
-    bot.sendMessage(chat_id, `Sorry, I didn't understand that. Please try again.`);
+    console.log(error)
+    bot.sendMessage(chat_id, `Oops!`);
 });
 
 bot.on('webhook_error', (error) => {
-    bot.sendMessage(chat_id, `Sorry, I didn't understand that. Please try again.`);
+    bot.sendMessage(chat_id, `Oops!`);
 });
