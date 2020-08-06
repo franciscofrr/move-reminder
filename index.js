@@ -10,7 +10,7 @@ const options = {
   };
 
 const url = process.env.APP_URL || 'https://move-reminder-telegram-bot.herokuapp.com:443';
-const bot = new TelegramBot(TOKEN, {polling: true})
+const bot = new TelegramBot(TOKEN)
 bot.setWebHook(`${url}/bot${TOKEN}`);
 
 const capitalize = (str, lower = false) =>
