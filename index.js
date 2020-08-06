@@ -1,11 +1,17 @@
 const TelegramBot = require( `node-telegram-bot-api` )
-const TOKEN = `1289072373:AAFZ9m4LvPcO1J2wHSlu0fp82HG3PjeUW4Y`
+const TOKEN = `1289072373:AAEZogRACo0m8s7Mc5nLmH4PbqgFmISfAz0`
 const gamemaster = require('./gamemaster.json')
 const gamemaster_pt = require('./gamemaster_pt.json')
 
-//const url = process.env.APP_URL || 'https://move-reminder-telegram-bot.herokuapp.com:443';
-const bot = new TelegramBot(TOKEN, {polling: true})
-//bot.setWebHook(`${url}/bot${TOKEN}`);
+const options = {
+    webHook: {
+      port: process.env.PORT
+    }
+  };
+
+const url = process.env.APP_URL || 'https://move-reminder-telegram-bot.herokuapp.com:443';
+const bot = new TelegramBot(TOKEN, options)
+bot.setWebHook(`${url}/bot${TOKEN}`);
 
 const capitalize = (str, lower = false) =>
   (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
