@@ -2538,7 +2538,7 @@
         },
         "types": ["water", "fighting"],
         "fastMoves": ["BUBBLE", "MUD_SHOT", "ROCK_SMASH"],
-        "chargedMoves": ["DYNAMIC_PUNCH", "HYDRO_PUMP", "ICE_PUNCH", "SUBMISSION", "POWER_UP_PUNCH"],
+        "chargedMoves": ["DYNAMIC_PUNCH", "HYDRO_PUMP", "ICE_PUNCH", "SUBMISSION", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [21.5, 8, 11, 10],
             "cp2500": [39, 12, 14, 13]
@@ -2558,7 +2558,7 @@
         },
         "types": ["water", "fighting"],
         "fastMoves": ["BUBBLE", "MUD_SHOT", "ROCK_SMASH"],
-        "chargedMoves": ["DYNAMIC_PUNCH", "HYDRO_PUMP", "ICE_PUNCH", "SUBMISSION", "POWER_UP_PUNCH"],
+        "chargedMoves": ["DYNAMIC_PUNCH", "HYDRO_PUMP", "ICE_PUNCH", "SUBMISSION", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [21.5, 8, 11, 10],
             "cp2500": [39, 12, 14, 13]
@@ -3855,7 +3855,7 @@
         },
         "types": ["fighting", "none"],
         "fastMoves": ["BULLET_PUNCH", "COUNTER", "ROCK_SMASH"],
-        "chargedMoves": ["BRICK_BREAK", "CLOSE_COMBAT", "FIRE_PUNCH", "ICE_PUNCH", "THUNDER_PUNCH", "POWER_UP_PUNCH"],
+        "chargedMoves": ["BRICK_BREAK", "CLOSE_COMBAT", "FIRE_PUNCH", "ICE_PUNCH", "THUNDER_PUNCH", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [23.5, 8, 12, 13],
             "cp2500": [40, 15, 15, 15]
@@ -3874,7 +3874,7 @@
         },
         "types": ["fighting", "none"],
         "fastMoves": ["BULLET_PUNCH", "COUNTER", "ROCK_SMASH"],
-        "chargedMoves": ["BRICK_BREAK", "CLOSE_COMBAT", "FIRE_PUNCH", "ICE_PUNCH", "THUNDER_PUNCH", "POWER_UP_PUNCH"],
+        "chargedMoves": ["BRICK_BREAK", "CLOSE_COMBAT", "FIRE_PUNCH", "ICE_PUNCH", "THUNDER_PUNCH", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [23.5, 8, 12, 13],
             "cp2500": [40, 15, 15, 15]
@@ -4069,7 +4069,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["LOW_KICK", "MUD_SLAP"],
-        "chargedMoves": ["BRICK_BREAK", "CRUNCH", "EARTHQUAKE", "OUTRAGE", "STOMP", "POWER_UP_PUNCH"],
+        "chargedMoves": ["BRICK_BREAK", "CRUNCH", "EARTHQUAKE", "OUTRAGE", "STOMP", "POWER-UP_PUNCH"],
         "tags": ["regional"],
         "defaultIVs": {
             "cp1500": [21.5, 7, 11, 12],
@@ -8257,7 +8257,7 @@
         },
         "types": ["steel", "fairy"],
         "fastMoves": ["ASTONISH", "BITE", "FIRE_FANG", "ICE_FANG"],
-        "chargedMoves": ["IRON_HEAD", "PLAY_ROUGH", "VICE_GRIP", "POWER_UP_PUNCH"],
+        "chargedMoves": ["IRON_HEAD", "PLAY_ROUGH", "VICE_GRIP", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [39, 6, 14, 10],
             "cp2500": [40, 15, 15, 15]
@@ -8275,7 +8275,7 @@
         },
         "types": ["steel", "fairy"],
         "fastMoves": ["ASTONISH", "BITE", "FIRE_FANG", "ICE_FANG"],
-        "chargedMoves": ["IRON_HEAD", "PLAY_ROUGH", "VICE_GRIP", "POWER_UP_PUNCH"],
+        "chargedMoves": ["IRON_HEAD", "PLAY_ROUGH", "VICE_GRIP", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [39, 6, 14, 10],
             "cp2500": [40, 15, 15, 15]
@@ -8356,7 +8356,7 @@
         },
         "types": ["fighting", "psychic"],
         "fastMoves": ["COUNTER", "PSYCHO_CUT"],
-        "chargedMoves": ["DYNAMIC_PUNCH", "ICE_PUNCH", "PSYCHIC", "POWER_UP_PUNCH"],
+        "chargedMoves": ["DYNAMIC_PUNCH", "ICE_PUNCH", "PSYCHIC", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -11329,7 +11329,7 @@
         },
         "types": ["fighting", "steel"],
         "fastMoves": ["BULLET_PUNCH", "COUNTER"],
-        "chargedMoves": ["CLOSE_COMBAT", "FLASH_CANNON", "SHADOW_BALL", "POWER_UP_PUNCH", "AURA_SPHERE"],
+        "chargedMoves": ["CLOSE_COMBAT", "FLASH_CANNON", "SHADOW_BALL", "POWER-UP_PUNCH", "AURA_SPHERE"],
         "defaultIVs": {
             "cp1500": [20.5, 9, 10, 10],
             "cp2500": [38.5, 5, 11, 13]
@@ -12673,7 +12673,7 @@
         },
         "types": ["psychic", "fire"],
         "fastMoves": ["CONFUSION", "QUICK_ATTACK"],
-        "chargedMoves": ["OVERHEAT", "FOCUS_BLAST", "PSYCHIC", "V_CREATE"],
+        "chargedMoves": ["OVERHEAT", "FOCUS_BLAST", "PSYCHIC", "V-CREATE"],
 		"tags": ["mythical", "untradeable"],
         "defaultIVs": {
 			"cp1500": [16.5, 12, 12, 10],
@@ -13814,7 +13814,7 @@
         },
         "types": ["dark", "fighting"],
         "fastMoves": ["COUNTER", "SNARL"],
-        "chargedMoves": ["ACID_SPRAY", "POWER_UP_PUNCH", "FOUL_PLAY"],
+        "chargedMoves": ["ACID_SPRAY", "POWER-UP_PUNCH", "FOUL_PLAY"],
         "defaultIVs": {
             "cp1500": [24.5, 6, 14, 10],
             "cp2500": [40, 15, 15, 15]
@@ -15101,7 +15101,7 @@
         },
         "types": ["fire", "none"],
         "fastMoves": ["LICK", "FIRE_SPIN"],
-        "chargedMoves": ["FLAMETHROWER", "THUNDER_PUNCH", "POWER_UP_PUNCH"],
+        "chargedMoves": ["FLAMETHROWER", "THUNDER_PUNCH", "POWER-UP_PUNCH"],
         "defaultIVs": {
             "cp1500": [23.5, 5, 11, 9],
             "cp2500": [40, 15, 15, 15]
@@ -16982,8 +16982,19 @@
         "energyGain": 0,
         "cooldown": 500
     }, {
-        "moveId": "POWER_UP_PUNCH",
-        "name": "Power-Up Punch",
+        "moveId": "POWER-UP_PUNCH",
+        "name": "Power-up Punch",
+        "type": "fighting",
+        "power": 20,
+        "energy": 35,
+        "energyGain": 0,
+        "cooldown": 500,
+        "buffs": [1, 0],
+        "buffTarget": "self",
+        "buffApplyChance": "1"
+    }, {
+        "moveId": "POWER-UP_PUNCH",
+        "name": "Power Up Punch",
         "type": "fighting",
         "power": 20,
         "energy": 35,
@@ -17500,7 +17511,7 @@
         "cooldown": 500
     }, {
         "moveId": "V_CREATE",
-        "name": "V-Create",
+        "name": "V-create",
         "type": "fire",
         "power": 95,
         "energy": 40,
