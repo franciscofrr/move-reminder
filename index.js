@@ -192,8 +192,6 @@ bot.onText(/\/golpe (.+)/, (msg, match) => {
 
     const game_data_moves = gamemaster_pt.moves;
     var move = game_data_moves.find(move => move.namePt === capitalize(match[1]));
-    
-    console.log(capitalize(match[1]));
 
     var pokemon_move_data = '';
     var move_category = '';
@@ -266,8 +264,11 @@ bot.onText(/\/golpe (.+)/, (msg, match) => {
     bot.sendMessage(chatId, resp, opts);
   });
 
+bot.on('error', (error) => {
+    bot.sendMessage(chat_id, `Oops!`);
+});
+
 bot.on('polling_error', (error) => {
-    console.log(error)
     bot.sendMessage(chat_id, `Oops!`);
 });
 
