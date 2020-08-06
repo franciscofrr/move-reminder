@@ -140,6 +140,86 @@ bot.onText(/\/move (.+)/, (msg, match) => {
     bot.sendMessage(chatId, resp, opts);
   });
 
+// move check - portuguese
+bot.onText(/\/golpe (.+)/, (msg, match) => {
+    const opts = {
+        parse_mode: 'Markdown'
+    };
+
+    const game_data_moves = gamemaster.moves;
+    var move = game_data_moves.find(move => move.name === capitalize(match[1]));
+
+    var pokemon_move_data = '';
+    var move_category = '';
+    var move_cat = '';
+
+    var move_name = move.namePt;
+    var move_type = capitalize(move.typePt);
+    var move_power = move.power;
+    var move_energy = move.energy;
+    var move_energy_gain = move.energyGain;
+    var move_dpe = (move_power / move_energy).toFixed(2);
+    var move_buff_attack = 0;
+    var move_buff_defense = 0;
+    
+    if (move.buffs) {
+        var move_buff_attack = move.buffs[0] > 0 ? `+${move.buffs[0]}` : move.buffs[0];
+        var move_buff_defense = move.buffs[1] > 0 ? `+${move.buffs[1]}` : move.buffs[1];
+        var move_buff_target = move.buffTargetPt;
+        var move_buff_apply_chance = move.buffApplyChance * 100;
+    }
+    
+    if (move_energy_gain > 0) {
+        move_category = 'fast_move';
+        move_cat = 'Golpe Rápido';
+    } else if (move_buff_attack != 0) {
+        if (move_buff_defense != 0) {
+            move_category = 'charged_move_dual_effect';
+            move_cat = 'Golpe Carregado';
+        } else {
+            move_category = 'charged_move_attack_effect'
+            move_cat = 'Golpe Carregado';
+        }
+    } else if (move_buff_defense != 0) {
+        move_category = 'charged_move_defense_effect';
+        move_cat = 'Golpe Carregado';
+    } else {
+        move_category = 'charged_move_simple';
+        move_cat = 'Golpe Carregado';
+    }
+
+    pokemon_move_data = `*${move_name}* _(${move_cat})_\n*Tipo:* ${move_type}\n\n*Poder:* ${move_power}`;
+
+    switch(move_category) {
+        case 'fast_move':
+            pokemon_move_data += `\n*Energia:* ${move_energy_gain}`;
+            break;
+        case 'charged_move_simple':
+            pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
+            break;
+        case 'charged_move_attack_effect':
+            pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
+            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_attack} Ataque para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            break;
+        case 'charged_move_defense_effect':
+            pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
+            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_defense} Defesa para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            break;
+        case 'charged_move_dual_effect':
+            pokemon_move_data += `\n*Energia:* ${move_energy}\n*DPE:* ${move_dpe}`;
+            pokemon_move_data += `\n\n*Efeitos:*\n${move_buff_attack} Ataque para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            pokemon_move_data += `\n${move_buff_defense} Defesa para ${move_buff_target} (${move_buff_apply_chance}% de Chance)`;
+            break;
+    }
+
+    pokemon_move_data += `\n\n_(Fonte dos Dados: pvpoke.com)_`
+
+    const chatId = msg.chat.id;
+    var resp = pokemon_move_data;
+  
+    bot.sendMessage(chatId, resp, opts);
+  });
+
 bot.on('polling_error', (error) => {
     bot.sendMessage(chat_id, `Sorry, I didn't understand that. Please try again.`);
 });
