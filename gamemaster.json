@@ -4330,7 +4330,7 @@
         },
         "types": ["bug", "none"],
         "fastMoves": ["BUG_BITE", "FURY_CUTTER", "ROCK_SMASH"],
-        "chargedMoves": ["CLOSE_COMBAT", "SUBMISSION", "VICE_GRIP", "X_SCISSOR", "SUPER_POWER"],
+        "chargedMoves": ["CLOSE_COMBAT", "SUBMISSION", "VICE_GRIP", "X_SCISSOR", "SUPERPOWER"],
         "defaultIVs": {
             "cp1500": [18.5, 9, 15, 9],
             "cp2500": [32.5, 6, 8, 14]
@@ -4350,7 +4350,7 @@
         },
         "types": ["bug", "none"],
         "fastMoves": ["BUG_BITE", "FURY_CUTTER", "ROCK_SMASH"],
-        "chargedMoves": ["CLOSE_COMBAT", "SUBMISSION", "VICE_GRIP", "X_SCISSOR", "SUPER_POWER"],
+        "chargedMoves": ["CLOSE_COMBAT", "SUBMISSION", "VICE_GRIP", "X_SCISSOR", "SUPERPOWER"],
         "defaultIVs": {
             "cp1500": [18.5, 9, 15, 9],
             "cp2500": [32.5, 6, 8, 14]
@@ -4744,7 +4744,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["LICK", "ZEN_HEADBUTT", "YAWN"],
-        "chargedMoves": ["BODY_SLAM", "EARTHQUAKE", "HEAVY_SLAM", "HYPER_BEAM", "OUTRAGE", "SKULL_BASH", "SUPER_POWER"],
+        "chargedMoves": ["BODY_SLAM", "EARTHQUAKE", "HEAVY_SLAM", "HYPER_BEAM", "OUTRAGE", "SKULL_BASH", "SUPERPOWER"],
         "defaultIVs": {
             "cp1500": [17, 5, 13, 15],
             "cp2500": [28.5, 8, 10, 14]
@@ -4764,7 +4764,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["LICK", "ZEN_HEADBUTT", "YAWN"],
-        "chargedMoves": ["BODY_SLAM", "EARTHQUAKE", "HEAVY_SLAM", "HYPER_BEAM", "OUTRAGE", "SKULL_BASH", "SUPER_POWER"],
+        "chargedMoves": ["BODY_SLAM", "EARTHQUAKE", "HEAVY_SLAM", "HYPER_BEAM", "OUTRAGE", "SKULL_BASH", "SUPERPOWER"],
         "defaultIVs": {
             "cp1500": [17, 5, 13, 15],
             "cp2500": [28.5, 8, 10, 14]
@@ -8140,7 +8140,7 @@
         },
         "types": ["fighting", "none"],
         "fastMoves": ["BULLET_PUNCH", "COUNTER"],
-        "chargedMoves": ["CLOSE_COMBAT", "DYNAMIC_PUNCH", "HEAVY_SLAM", "SUPER_POWER"],
+        "chargedMoves": ["CLOSE_COMBAT", "DYNAMIC_PUNCH", "HEAVY_SLAM", "SUPERPOWER"],
         "defaultIVs": {
             "cp1500": [19.5, 6, 13, 10],
             "cp2500": [35, 7, 14, 8]
@@ -11667,7 +11667,7 @@
         },
         "types": ["ground", "rock"],
         "fastMoves": ["MUD_SLAP", "SMACK_DOWN"],
-        "chargedMoves": ["EARTHQUAKE", "STONE_EDGE", "SURF", "SKULL_BASH", "SUPER_POWER", "ROCK_WRECKER"],
+        "chargedMoves": ["EARTHQUAKE", "STONE_EDGE", "SURF", "SKULL_BASH", "SUPERPOWER", "ROCK_WRECKER"],
         "defaultIVs": {
             "cp1500": [14.5, 9, 12, 14],
             "cp2500": [24.5, 6, 10, 14]
@@ -13201,7 +13201,7 @@
         },
         "types": ["rock", "none"],
         "fastMoves": ["MUD_SLAP", "SMACK_DOWN"],
-        "chargedMoves": ["ROCK_SLIDE", "SOLAR_BEAM", "SUPER_POWER", "HEAVY_SLAM"],
+        "chargedMoves": ["ROCK_SLIDE", "SOLAR_BEAM", "SUPERPOWER", "HEAVY_SLAM"],
         "defaultIVs": {
             "cp1500": [17, 7, 14, 10],
             "cp2500": [29, 5, 6, 13]
@@ -13683,7 +13683,7 @@
         },
         "types": ["ice", "fire"],
         "fastMoves": ["TACKLE", "ICE_FANG"],
-        "chargedMoves": ["OVERHEAT", "AVALANCHE", "SUPER_POWER", "ICE_PUNCH"],
+        "chargedMoves": ["OVERHEAT", "AVALANCHE", "SUPERPOWER", "ICE_PUNCH"],
         "tags": ["galarian"],
         "defaultIVs": {
             "cp1500": [15, 5, 11, 6],
@@ -13700,7 +13700,7 @@
         },
         "types": ["ice", "none"],
         "fastMoves": ["TACKLE", "ICE_FANG"],
-        "chargedMoves": ["OVERHEAT", "AVALANCHE", "SUPER_POWER", "ICE_PUNCH"],
+        "chargedMoves": ["OVERHEAT", "AVALANCHE", "SUPERPOWER", "ICE_PUNCH"],
         "tags": ["galarian"],
         "defaultIVs": {
             "cp1500": [17.5, 9, 14, 10],
@@ -15624,7 +15624,7 @@
         },
         "types": ["steel", "none"],
         "fastMoves": ["THUNDER_SHOCK"],
-        "chargedMoves": ["FLASH_CANNON", "HYPER_BEAM", "ROCK_SLIDE", "THUNDERBOLT", "SUPER_POWER"],
+        "chargedMoves": ["FLASH_CANNON", "HYPER_BEAM", "ROCK_SLIDE", "THUNDERBOLT", "SUPERPOWER"],
         "defaultIVs": {
             "cp1500": [15, 10, 14, 11],
             "cp2500": [26, 5, 6, 12]
@@ -16993,7 +16993,7 @@
         "buffTarget": "self",
         "buffApplyChance": "1"
     }, {
-        "moveId": "POWER-UP_PUNCH",
+        "moveId": "POWER_UP_PUNCH",
         "name": "Power Up Punch",
         "type": "fighting",
         "power": 20,
@@ -17403,8 +17403,19 @@
         "energyGain": 7,
         "cooldown": 1000
     }, {
-        "moveId": "SUPER_POWER",
+        "moveId": "SUPERPOWER",
         "name": "Superpower",
+        "type": "fighting",
+        "power": 85,
+        "energy": 40,
+        "energyGain": 0,
+        "cooldown": 500,
+        "buffs": [-1, -1],
+        "buffTarget": "self",
+        "buffApplyChance": "1"
+    }, {
+        "moveId": "SUPERPOWER",
+        "name": "Super Power",
         "type": "fighting",
         "power": 85,
         "energy": 40,
