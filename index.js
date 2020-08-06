@@ -34,6 +34,18 @@ bot.onText(/\/help/, (msg) => {
     bot.sendMessage(chatId, resp, opts);
 });
 
+// portuguese
+bot.onText(/\/ajuda/, (msg) => {
+    const opts = {
+        parse_mode: 'Markdown'
+    };
+
+    const chatId = msg.chat.id;
+    const resp = `Os comandos disponíveis no idioma português são:\n\n*/golpe <nome do golpe>* - Informações sobre o golpe requisitado.\n\nTodos os dados utilizados vêm do *pvpoke.com* - confira!`
+
+    bot.sendMessage(chatId, resp, opts);
+});
+
 bot.onText(/\/moves (.+)/, (msg, match) => {
     const opts = {
         parse_mode: 'Markdown'
