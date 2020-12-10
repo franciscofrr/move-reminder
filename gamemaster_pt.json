@@ -1811,7 +1811,7 @@
         },
         "types": ["veneno", "voador"],
         "fastMoves": ["MORDIDA", "ATAQUE_RÁPIDO"],
-        "chargedMoves": ["AIR_CORTARTER", "PRESA_VENENOSA", "BOMBA_DE_LODO", "SWIFT"],
+        "chargedMoves": ["AIR_CORTARTER", "PRESA_VENENOSA", "BOMBA_DE_LODO", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -1830,7 +1830,7 @@
         },
         "types": ["veneno", "voador"],
         "fastMoves": ["MORDIDA", "ATAQUE_RÁPIDO"],
-        "chargedMoves": ["AIR_CORTARTER", "PRESA_VENENOSA", "BOMBA_DE_LODO", "SWIFT"],
+        "chargedMoves": ["AIR_CORTARTER", "PRESA_VENENOSA", "BOMBA_DE_LODO", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -3216,12 +3216,12 @@
         },
         "types": ["normal", "voador"],
         "fastMoves": ["BICADA", "ATAQUE_RÁPIDO"],
-        "chargedMoves": ["ÁS_DOS_ARES", "PÁSSARO_BRAVO", "BICO_BROCA", "SWIFT"],
+        "chargedMoves": ["ÁS_DOS_ARES", "PÁSSARO_BRAVO", "BICO_BROCA", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
         },
-        "eliteMoves": ["SWIFT"]
+        "eliteMoves": ["ATAQUE_VELOZ"]
     }, {
         "dex": 85,
         "speciesName": "Dodrio",
@@ -4154,7 +4154,7 @@
         },
         "types": ["água", "none"],
         "fastMoves": ["ATAQUE_RÁPIDO", "INVESTIDA", "REVOLVER_D'ÁGUA"],
-        "chargedMoves": ["JATO_DE_BOLHAS", "GEMA_PODEROSA", "SWIFT"],
+        "chargedMoves": ["JATO_DE_BOLHAS", "GEMA_PODEROSA", "ATAQUE_VELOZ"],
         "legacyMoves": ["ATAQUE_RÁPIDO"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
@@ -4515,7 +4515,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["ATAQUE_RÁPIDO", "INVESTIDA"],
-        "chargedMoves": ["PANCADA_CORPORAL", "CAVAR", "ÚLTIMO_RECURSO", "SWIFT"],
+        "chargedMoves": ["PANCADA_CORPORAL", "CAVAR", "ÚLTIMO_RECURSO", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -5131,7 +5131,7 @@
         },
         "types": ["fogo", "none"],
         "fastMoves": ["BRASA", "INVESTIDA"],
-        "chargedMoves": ["ATAQUE_DE_CHAMAS", "LANÇA-CHAMAS", "SWIFT"],
+        "chargedMoves": ["ATAQUE_DE_CHAMAS", "LANÇA-CHAMAS", "ATAQUE_VELOZ"],
         "tags": ["starter"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
@@ -5302,7 +5302,7 @@
         },
         "types": ["inseto", "voador"],
         "fastMoves": ["PICADA", "INVESTIDA"],
-        "chargedMoves": ["ÁS_DOS_ARES", "VENTO_PRATEADO", "SWIFT"],
+        "chargedMoves": ["ÁS_DOS_ARES", "VENTO_PRATEADO", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -5829,7 +5829,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["ABISMAR", "ARRANHÃO"],
-        "chargedMoves": ["ÁS_DOS_ARES", "MOVIMENTO_BAIXO", "SWIFT"],
+        "chargedMoves": ["ÁS_DOS_ARES", "MOVIMENTO_BAIXO", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -6792,7 +6792,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["INVESTIDA", "CORTADOR_DE_FÚRIA", "PICADA", "MORDIDA", "SOCO_ENGANADOR", "SOPRO_DO_DRAGÃO", "TROVOADA_DE_CHOQUES", "FAÍSCA", "RASTEIRA", "GOLPE_DE_CARATÊ", "BRASA", "ATAQUE_DE_ASA", "BICADA", "LAMBIDA", "GARRA_SOMBRIA", "CHICOTE_DE_CIPÓ", "FOLHA_NAVALHA", "TIRO_DE_LAMA", "CACO_DE_GELO", "RESPIRAÇÃO_DE_GELO", "ATAQUE_RÁPIDO", "ARRANHÃO", "PANCADA", "CORTAR", "GOLPE_ENVENENADO", "ÁCIDO", "CORTE_PSÍQUICO", "LANÇAMENTO_DE_ROCHA", "GARRA_DE_METAL", "SOCO_PROJÉTIL", "REVOLVER_D'ÁGUA", "BORRIFADA", "TAPA_DE_LAMA", "CABEÇADA_ZEN", "CONFUSÃO", "FERRÃO_VENENOSO", "BOLHA", "ATAQUE_DISSIMULADO", "ASA_DE_AÇO", "PRESAS_DE_FOGO", "ESMAGAMENTO_DE_PEDRAS", "CONTRA-ATACAR", "NEVE_EM_PÓ", "CARGA_DE_RAIO", "TROCA_ELÉTRICA", "CAUDA_DO_DRAGÃO", "GOLPE_DE_AR", "INFESTAÇÃO", "IRA_DE_INSETO", "ABISMAR", "FEITIÇO", "CAUDA_DE_FERRO", "CHAMA_FURACÃO", "PROJÉTIL_DE_SEMENTE", "EXTRASSENSORIAL", "ROSNADO", "PODER_OCULTO_(INSETO)", "PODER_OCULTO_(SOMBRIO)", "PODER_OCULTO_(DRAGÃO)", "PODER_OCULTO_(ELÉTRICO)", "PODER_OCULTO_(LUTADOR)", "PODER_OCULTO_(FOGO)", "PODER_OCULTO_(VOADOR)", "PODER_OCULTO_(FANTASMA)", "PODER_OCULTO_(PLANTA)", "PODER_OCULTO_(TERRA)", "PODER_OCULTO_(GELO)", "PODER_OCULTO_(VENENO)", "PODER_OCULTO_(PSÍQUICO)", "PODER_OCULTO_(PEDRA)", "PODER_OCULTO_(AÇO)", "PODER_OCULTO_(ÁGUA)", "DESMANTELAR", "CACHOEIRA", "BOCEJO", "PRESENTE"],
-        "chargedMoves": ["INSISTÊNCIA", "EMBRULHO", "HIPER-RAIO", "PULSO_SOMBRIO", "ATAQUE_DE_LAMA", "AGARRAMENTO_COMPRESSOR", "RODA_DE_FOGO", "MEGACHIFRE", "LANÇA-CHAMAS", "CAVAR", "GOLPE_CRUZADO", "FEIXE_PSÍQUICO", "TERREMOTO", "GUME_DE_PEDRA", "SOCO_DE_GELO", "DESCARGA", "CANHÃO_DE_FLASH", "BICO_BROCA", "RAIO_CONGELANTE", "NEVASCA", "ONDA_DE_CALOR", "ÁS_DOS_ARES", "FURAÇÃO", "NEVASCA_DE_PÉTALAS", "ZUMBIDO_DE_INSETO", "PRESA_VENENOSA", "TALHO_NOTURNO", "JATO_DE_BOLHAS", "SUBMISSÃO", "MOVIMENTO_BAIXO", "AQUA_JATO", "AQUA_CAUDA", "BOMBA_DE_SEMENTES", "CHOQUE_PSÍQUICO", "PODER_ANCESTRAL", "TUMBA_DE_ROCHAS", "DESLIZE_DE_PEDRAS", "GEMA_PODEROSA", "FURTIVIDADE_NAS_SOMBRAS", "SOCO_SOMBRIO", "VENTO_OMINOSO", "BOLA_SOMBRIA", "BOMBA_ÍMÃ", "CABEÇA_DE_FERRO", "SOCO_TROVOADA", "TROVÃO", "RELÂMPAGO", "TWISTER", "PULSO_DO_DRAGÃO", "GARRA_DE_DRAGÃO", "VOZ_DESARMANTE", "BEIJO_DRENANTE", "CLARÃO_DESLUMBRANTE", "EXPLOSÃO_LUNAR", "JOGO_DURO", "CORTE-VENENO", "BOMBA_DE_LODO", "ONDA_DE_LAMA", "TIRO_DE_SUJEIRA", "BASTÃO_DE_OSSO", "TREMOR", "BOMBA_DE_LAMA", "FEIXE_SINALIZADOR", "TESOURA_X", "ATAQUE_DE_CHAMAS", "RAJADA_DE_CHAMAS", "RAJADA_DE_FOGO", "PULSO_D'ÁGUA", "JATO_D'ÁGUA", "PSÍQUICO", "VENTO_CONGELANTE", "SOCO_DE_FOGO", "RAIO_SOLAR", "LÂMINA_DE_FOLHA", "CHICOTE_PODEROSO", "AIR_CORTARTER", "FURACÃO", "QUEBRA-TELHA", "SWIFT", "ATAQUE_DE_CHIFRE", "PISOTEAR", "HIPERPRESA", "PANCADA_CORPORAL", "CORPO-A-CORPO", "SOCO_DINÂMICO", "EXPLOSÃO_FOCALIZADA", "RAIO_AURORA", "CARGA_SELVAGEM", "CANHÃO_ZAP", "AVALANCHE", "PÁSSARO_BRAVO", "ATAQUE_DO_CÉU", "FOSSO_DE_AREIA", "EXPLOSÃO_DE_ROCHA", "VENTO_PRATEADO", "SOMBRA_NOTURNA", "GIROBOLA", "GOLPE_PESADO", "SUPERAQUECIMENTO", "NÓ_DE_GRAMA", "BOLA_DE_ENERGIA", "VISÃO_DO_FUTURO", "CASACO_ESPELHADO", "ULTRAJE", "MASTIGADA", "JOGO_SUJO", "SURFAR", "METEORO_DO_DRAGÃO", "IMPULSO_PSÍQUICO", "PLANTA_MORTAL", "QUEIMADURA_EXPLOSIVA", "HIDRO_CANHÃO", "ÚLTIMO_RECURSO", "METEORO_ESMAGADOR"],
+        "chargedMoves": ["INSISTÊNCIA", "EMBRULHO", "HIPER-RAIO", "PULSO_SOMBRIO", "ATAQUE_DE_LAMA", "AGARRAMENTO_COMPRESSOR", "RODA_DE_FOGO", "MEGACHIFRE", "LANÇA-CHAMAS", "CAVAR", "GOLPE_CRUZADO", "FEIXE_PSÍQUICO", "TERREMOTO", "GUME_DE_PEDRA", "SOCO_DE_GELO", "DESCARGA", "CANHÃO_DE_FLASH", "BICO_BROCA", "RAIO_CONGELANTE", "NEVASCA", "ONDA_DE_CALOR", "ÁS_DOS_ARES", "FURAÇÃO", "NEVASCA_DE_PÉTALAS", "ZUMBIDO_DE_INSETO", "PRESA_VENENOSA", "TALHO_NOTURNO", "JATO_DE_BOLHAS", "SUBMISSÃO", "MOVIMENTO_BAIXO", "AQUA_JATO", "AQUA_CAUDA", "BOMBA_DE_SEMENTES", "CHOQUE_PSÍQUICO", "PODER_ANCESTRAL", "TUMBA_DE_ROCHAS", "DESLIZE_DE_PEDRAS", "GEMA_PODEROSA", "FURTIVIDADE_NAS_SOMBRAS", "SOCO_SOMBRIO", "VENTO_OMINOSO", "BOLA_SOMBRIA", "BOMBA_ÍMÃ", "CABEÇA_DE_FERRO", "SOCO_TROVOADA", "TROVÃO", "RELÂMPAGO", "TWISTER", "PULSO_DO_DRAGÃO", "GARRA_DE_DRAGÃO", "VOZ_DESARMANTE", "BEIJO_DRENANTE", "CLARÃO_DESLUMBRANTE", "EXPLOSÃO_LUNAR", "JOGO_DURO", "CORTE-VENENO", "BOMBA_DE_LODO", "ONDA_DE_LAMA", "TIRO_DE_SUJEIRA", "BASTÃO_DE_OSSO", "TREMOR", "BOMBA_DE_LAMA", "FEIXE_SINALIZADOR", "TESOURA_X", "ATAQUE_DE_CHAMAS", "RAJADA_DE_CHAMAS", "RAJADA_DE_FOGO", "PULSO_D'ÁGUA", "JATO_D'ÁGUA", "PSÍQUICO", "VENTO_CONGELANTE", "SOCO_DE_FOGO", "RAIO_SOLAR", "LÂMINA_DE_FOLHA", "CHICOTE_PODEROSO", "AIR_CORTARTER", "FURACÃO", "QUEBRA-TELHA", "ATAQUE_VELOZ", "ATAQUE_DE_CHIFRE", "PISOTEAR", "HIPERPRESA", "PANCADA_CORPORAL", "CORPO-A-CORPO", "SOCO_DINÂMICO", "EXPLOSÃO_FOCALIZADA", "RAIO_AURORA", "CARGA_SELVAGEM", "CANHÃO_ZAP", "AVALANCHE", "PÁSSARO_BRAVO", "ATAQUE_DO_CÉU", "FOSSO_DE_AREIA", "EXPLOSÃO_DE_ROCHA", "VENTO_PRATEADO", "SOMBRA_NOTURNA", "GIROBOLA", "GOLPE_PESADO", "SUPERAQUECIMENTO", "NÓ_DE_GRAMA", "BOLA_DE_ENERGIA", "VISÃO_DO_FUTURO", "CASACO_ESPELHADO", "ULTRAJE", "MASTIGADA", "JOGO_SUJO", "SURFAR", "METEORO_DO_DRAGÃO", "IMPULSO_PSÍQUICO", "PLANTA_MORTAL", "QUEIMADURA_EXPLOSIVA", "HIDRO_CANHÃO", "ÚLTIMO_RECURSO", "METEORO_ESMAGADOR"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -7139,12 +7139,13 @@
         },
         "types": ["psíquico", "voador"],
         "fastMoves": ["CAUDA_DO_DRAGÃO", "EXTRASSENSORIAL"],
-        "chargedMoves": ["VISÃO_DO_FUTURO", "JATO_D'ÁGUA", "ATAQUE_DO_CÉU"],
+        "chargedMoves": ["VISÃO_DO_FUTURO", "JATO_D'ÁGUA", "ATAQUE_DO_CÉU", "EXPLOSÃO_AÉREA"],
         "tags": ["legendary"],
         "defaultIVs": {
             "cp1500": [15, 5, 6, 15],
             "cp2500": [25, 7, 12, 8]
-        }
+        },
+        "eliteMoves": ["EXPLOSÃO_AÉREA"]
     }, {
         "dex": 250,
         "speciesName": "Ho-Oh",
@@ -7453,7 +7454,7 @@
         },
         "types": ["sombrio", "normal"],
         "fastMoves": ["INVESTIDA", "DESMANTELAR"],
-        "chargedMoves": ["CAVAR", "PANCADA_CORPORAL", "SWIFT"],
+        "chargedMoves": ["CAVAR", "PANCADA_CORPORAL", "ATAQUE_VELOZ"],
         "tags": ["galarian"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
@@ -8373,7 +8374,7 @@
         },
         "types": ["elétrico", "none"],
         "fastMoves": ["ATAQUE_RÁPIDO", "FAÍSCA"],
-        "chargedMoves": ["DESCARGA", "SWIFT", "RELÂMPAGO"],
+        "chargedMoves": ["DESCARGA", "ATAQUE_VELOZ", "RELÂMPAGO"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -8405,7 +8406,7 @@
         },
         "types": ["elétrico", "none"],
         "fastMoves": ["ATAQUE_RÁPIDO", "FAÍSCA"],
-        "chargedMoves": ["DESCARGA", "SWIFT", "RELÂMPAGO", "NÓ_DE_GRAMA"],
+        "chargedMoves": ["DESCARGA", "ATAQUE_VELOZ", "RELÂMPAGO", "NÓ_DE_GRAMA"],
         "defaultIVs": {
             "cp1500": [34, 6, 9, 12],
             "cp2500": [40, 15, 15, 15]
@@ -8421,7 +8422,7 @@
         },
         "types": ["elétrico", "none"],
         "fastMoves": ["ATAQUE_RÁPIDO", "FAÍSCA"],
-        "chargedMoves": ["DESCARGA", "SWIFT", "RELÂMPAGO", "NÓ_DE_GRAMA"],
+        "chargedMoves": ["DESCARGA", "ATAQUE_VELOZ", "RELÂMPAGO", "NÓ_DE_GRAMA"],
         "defaultIVs": {
             "cp1500": [37.5, 5, 14, 8],
             "cp2500": [40, 15, 15, 15]
@@ -10082,7 +10083,7 @@
         },
         "types": ["psíquico", "none"],
         "fastMoves": ["CARGA_DE_RAIO", "CABEÇADA_ZEN"],
-        "chargedMoves": ["IMPULSO_PSÍQUICO", "SWIFT", "RELÂMPAGO"],
+        "chargedMoves": ["IMPULSO_PSÍQUICO", "ATAQUE_VELOZ", "RELÂMPAGO"],
         "tags": ["mythical", "untradeable"],
         "defaultIVs": {
             "cp1500": [18.5, 14, 11, 13],
@@ -10426,7 +10427,7 @@
         },
         "types": ["elétrico", "none"],
         "fastMoves": ["FAÍSCA", "INVESTIDA"],
-        "chargedMoves": ["DESCARGA", "SWIFT", "RELÂMPAGO"],
+        "chargedMoves": ["DESCARGA", "ATAQUE_VELOZ", "RELÂMPAGO"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -10732,7 +10733,7 @@
         },
         "types": ["água", "none"],
         "fastMoves": ["ATAQUE_RÁPIDO", "REVOLVER_D'ÁGUA"],
-        "chargedMoves": ["AQUA_JATO", "SWIFT", "PULSO_D'ÁGUA"],
+        "chargedMoves": ["AQUA_JATO", "ATAQUE_VELOZ", "PULSO_D'ÁGUA"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -10748,7 +10749,7 @@
         },
         "types": ["água", "none"],
         "fastMoves": ["REVOLVER_D'ÁGUA", "CACHOEIRA"],
-        "chargedMoves": ["AQUA_JATO", "JATO_D'ÁGUA", "SWIFT"],
+        "chargedMoves": ["AQUA_JATO", "JATO_D'ÁGUA", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [23, 6, 12, 7],
             "cp2500": [40, 15, 15, 15]
@@ -10928,7 +10929,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["PANCADA", "ATAQUE_RÁPIDO"],
-        "chargedMoves": ["SOCO_DE_FOGO", "SWIFT"],
+        "chargedMoves": ["SOCO_DE_FOGO", "ATAQUE_VELOZ"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -11254,8 +11255,8 @@
         }
     }, {
         "dex": 444,
-        "speciesName": "GaMORDIDA",
-        "speciesId": "gaMORDIDA",
+        "speciesName": "Gabite",
+        "speciesId": "Gabite",
         "baseStats": {
             "atk": 172,
             "def": 125,
@@ -12130,7 +12131,7 @@
         },
         "types": ["psíquico", "none"],
         "fastMoves": ["CONFUSÃO", "EXTRASSENSORIAL"],
-        "chargedMoves": ["VISÃO_DO_FUTURO", "SWIFT", "TROVÃO"],
+        "chargedMoves": ["VISÃO_DO_FUTURO", "ATAQUE_VELOZ", "TROVÃO"],
         "tags": ["legendary"],
         "defaultIVs": {
             "cp1500": [23, 5, 7, 5],
@@ -12147,7 +12148,7 @@
         },
         "types": ["psíquico", "none"],
         "fastMoves": ["CONFUSÃO", "EXTRASSENSORIAL"],
-        "chargedMoves": ["NEVASCA", "VISÃO_DO_FUTURO", "SWIFT"],
+        "chargedMoves": ["NEVASCA", "VISÃO_DO_FUTURO", "ATAQUE_VELOZ"],
         "tags": ["legendary"],
         "defaultIVs": {
             "cp1500": [17.5, 11, 14, 15],
@@ -12164,7 +12165,7 @@
         },
         "types": ["psíquico", "none"],
         "fastMoves": ["CONFUSÃO", "EXTRASSENSORIAL"],
-        "chargedMoves": ["RAJADA_DE_FOGO", "VISÃO_DO_FUTURO", "SWIFT"],
+        "chargedMoves": ["RAJADA_DE_FOGO", "VISÃO_DO_FUTURO", "ATAQUE_VELOZ"],
         "tags": ["legendary"],
         "defaultIVs": {
             "cp1500": [17.5, 6, 8, 9],
@@ -14008,7 +14009,7 @@
         },
         "types": ["normal", "none"],
         "fastMoves": ["PANCADA", "ENCANTAR"],
-        "chargedMoves": ["SWIFT", "RELÂMPAGO", "AQUA_CAUDA"],
+        "chargedMoves": ["ATAQUE_VELOZ", "RELÂMPAGO", "AQUA_CAUDA"],
         "defaultIVs": {
             "cp1500": [40, 15, 15, 15],
             "cp2500": [40, 15, 15, 15]
@@ -14521,7 +14522,7 @@
         },
         "types": ["inseto", "elétrico"],
         "fastMoves": ["TROCA_ELÉTRICA", "CORTADOR_DE_FÚRIA"],
-        "chargedMoves": ["CORTE-VENENO", "ZUMBIDO_DE_INSETO", "DESCARGA", "BOLA_DE_ENERGIA"],
+        "chargedMoves": ["CORTE-VENENO", "ZUMBIDO_DE_INSETO", "DESCARGA", "BOLA_DE_ENERGIA", "ESTOCADA"],
         "defaultIVs": {
             "cp1500": [25, 6, 14, 11],
             "cp2500": [40, 15, 15, 15]
@@ -15596,7 +15597,1201 @@
             "cp2500": [26.5, 10, 13, 15]
         },
         "tags": ["mythical", "untradeable"]
-    }, {
+    },
+    {
+      "dex": 650,
+      "speciesName": "Chespin",
+      "speciesId": "chespin",
+      "baseStats": {
+          "atk": 110,
+          "def": 106,
+          "hp": 148
+      },
+      "types": ["planta", "none"],
+      "fastMoves": ["DESMANTELAR", "CHICOTE_DE_CIPÓ"],
+      "chargedMoves": ["GIROBOLA", "BOMBA_DE_SEMENTES", "PANCADA_CORPORAL"],
+      "defaultIVs": {
+          "cp500": [17, 9, 12, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 651,
+      "speciesName": "Quilladin",
+      "speciesId": "quilladin",
+      "baseStats": {
+          "atk": 146,
+          "def": 156,
+          "hp": 156
+      },
+      "types": ["planta", "none"],
+      "fastMoves": ["RASTEIRA", "CHICOTE_DE_CIPÓ"],
+      "chargedMoves": ["GIROBOLA", "BOLA_DE_ENERGIA", "PANCADA_CORPORAL"],
+      "defaultIVs": {
+          "cp500": [10.5, 10, 15, 13],
+          "cp1500": [37, 5, 14, 6],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 652,
+      "speciesName": "Chesnaught",
+      "speciesId": "chesnaught",
+      "baseStats": {
+          "atk": 201,
+          "def": 204,
+          "hp": 204
+      },
+      "types": ["planta", "lutador"],
+      "fastMoves": ["RASTEIRA", "DERRUBADA", "CHICOTE_DE_CIPÓ"],
+      "chargedMoves": ["GIROBOLA", "BOLA_DE_ENERGIA", "SUPERPODER", "RAIO_SOLAR"],
+      "defaultIVs": {
+          "cp500": [6.5, 7, 10, 10],
+          "cp1500": [18.5, 6, 13, 14],
+          "cp2500": [31, 9, 14, 15]
+      }
+  }, {
+      "dex": 653,
+      "speciesName": "Fennekin",
+      "speciesId": "fennekin",
+      "baseStats": {
+          "atk": 116,
+          "def": 102,
+          "hp": 120
+      },
+      "types": ["fogo", "none"],
+      "fastMoves": ["ARRANHÃO", "BRASA"],
+      "chargedMoves": ["CHOQUE_PSÍQUICO", "LANÇA-CHAMAS", "ATAQUE_DE_CHAMAS"],
+      "defaultIVs": {
+          "cp500": [19, 6, 9, 12],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 654,
+      "speciesName": "Braixen",
+      "speciesId": "braixen",
+      "baseStats": {
+          "atk": 171,
+          "def": 130,
+          "hp": 153
+      },
+      "types": ["fogo", "none"],
+      "fastMoves": ["ARRANHÃO", "BRASA"],
+      "chargedMoves": ["CHOQUE_PSÍQUICO", "LANÇA-CHAMAS", "ATAQUE_DE_CHAMAS"],
+      "defaultIVs": {
+          "cp500": [10.5, 6, 5, 14],
+          "cp1500": [30.5, 8, 15, 13],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 655,
+      "speciesName": "Delphox",
+      "speciesId": "delphox",
+      "baseStats": {
+          "atk": 230,
+          "def": 189,
+          "hp": 181
+      },
+      "types": ["fogo", "psíquico"],
+      "fastMoves": ["ARRANHÃO", "CHAMA_FURACÃO", "CABEÇADA_ZEN"],
+      "chargedMoves": ["PSÍQUICO", "LANÇA-CHAMAS", "ATAQUE_DE_CHAMAS", "RAJADA_DE_FOGO"],
+      "defaultIVs": {
+          "cp500": [6, 9, 15, 15],
+          "cp1500": [18, 8, 8, 14],
+          "cp2500": [30, 5, 13, 13]
+      }
+  }, {
+      "dex": 656,
+      "speciesName": "Froakie",
+      "speciesId": "froakie",
+      "baseStats": {
+          "atk": 122,
+          "def": 84,
+          "hp": 121
+      },
+      "types": ["água", "none"],
+      "fastMoves": ["PANCADA", "BOLHA"],
+      "chargedMoves": ["PULSO_D'ÁGUA", "ÁS_DOS_ARES", "SURFAR"],
+      "defaultIVs": {
+          "cp500": [19.5, 7, 12, 8],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 657,
+      "speciesName": "Frogadier",
+      "speciesId": "frogadier",
+      "baseStats": {
+          "atk": 168,
+          "def": 114,
+          "hp": 144
+      },
+      "types": ["água", "none"],
+      "fastMoves": ["PANCADA", "BOLHA"],
+      "chargedMoves": ["PULSO_D'ÁGUA", "ÁS_DOS_ARES", "SURFAR"],
+      "defaultIVs": {
+          "cp500": [11.5, 6, 9, 13],
+          "cp1500": [39, 5, 11, 13],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 658,
+      "speciesName": "Greninja",
+      "speciesId": "greninja",
+      "baseStats": {
+          "atk": 223,
+          "def": 152,
+          "hp": 176
+      },
+      "types": ["água", "sombrio"],
+      "fastMoves": ["ATAQUE_DISSIMULADO", "BOLHA"],
+      "chargedMoves": ["TALHO_NOTURNO", "ÁS_DOS_ARES", "SURFAR", "JATO_D'ÁGUA"],
+      "defaultIVs": {
+          "cp500": [7, 13, 8, 13],
+          "cp1500": [20, 13, 15, 14],
+          "cp2500": [36.5, 15, 12, 15]
+      }
+  }, {
+      "dex": 659,
+      "speciesName": "Bunnelby",
+      "speciesId": "bunnelby",
+      "baseStats": {
+          "atk": 68,
+          "def": 72,
+          "hp": 116
+      },
+      "types": ["normal", "none"],
+      "fastMoves": ["TAPA_DE_LAMA", "ATAQUE_RÁPIDO"],
+      "chargedMoves": ["CAVAR", "TREMOR", "TERREMOTO"],
+      "defaultIVs": {
+          "cp500": [40, 9, 11, 14],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 660,
+      "speciesName": "Diggersby",
+      "speciesId": "diggersby",
+      "baseStats": {
+          "atk": 112,
+          "def": 155,
+          "hp": 198
+      },
+      "types": ["normal", "terra"],
+      "fastMoves": ["TIRO_DE_LAMA", "ATAQUE_RÁPIDO"],
+      "chargedMoves": ["CAVAR", "HIPER-RAIO", "TERREMOTO", "SOCO_DE_FOGO"],
+      "defaultIVs": {
+          "cp500": [12.5, 8, 12, 11],
+          "cp1500": [40, 13, 14, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 661,
+      "speciesName": "Fletchling",
+      "speciesId": "fletchling",
+      "baseStats": {
+          "atk": 95,
+          "def": 80,
+          "hp": 128
+      },
+      "types": ["normal", "voador"],
+      "fastMoves": ["BICADA", "ATAQUE_RÁPIDO"],
+      "chargedMoves": ["ÁS_DOS_ARES", "ONDA_DE_CALOR", "ATAQUE_VELOZ"],
+      "defaultIVs": {
+          "cp500": [24.5, 5, 15, 7],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 662,
+      "speciesName": "Fletchinder",
+      "speciesId": "fletchinder",
+      "baseStats": {
+          "atk": 145,
+          "def": 110,
+          "hp": 158
+      },
+      "types": ["fogo", "voador"],
+      "fastMoves": ["BICADA", "BRASA", "ASA_DE_AÇO"],
+      "chargedMoves": ["ÁS_DOS_ARES", "ONDA_DE_CALOR", "ATAQUE_DE_CHAMAS"],
+      "defaultIVs": {
+          "cp500": [12.5, 10, 11, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 663,
+      "speciesName": "Talonflame",
+      "speciesId": "talonflame",
+      "baseStats": {
+          "atk": 176,
+          "def": 155,
+          "hp": 186
+      },
+      "types": ["fogo", "voador"],
+      "fastMoves": ["BICADA", "CHAMA_FURACÃO", "ASA_DE_AÇO"],
+      "chargedMoves": ["PÁSSARO_BRAVO", "RAJADA_DE_FOGO", "ATAQUE_DE_CHAMAS", "FURACÃO"],
+      "defaultIVs": {
+          "cp500": [8.5, 5, 13, 12],
+          "cp1500": [26, 5, 10, 7],
+          "cp2500": [40, 15, 15, 15]
+      },
+  "searchPriority": 3
+  }, {
+      "dex": 664,
+      "speciesName": "Scatterbug",
+      "speciesId": "scatterbug",
+      "baseStats": {
+          "atk": 63,
+          "def": 63,
+          "hp": 116
+      },
+      "types": ["inseto", "none"],
+      "fastMoves": ["PICADA", "INVESTIDA"],
+      "chargedMoves": ["INSISTÊNCIA"],
+      "defaultIVs": {
+          "cp500": [40, 15, 15, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 665,
+      "speciesName": "Spewpa",
+      "speciesId": "spewpa",
+      "baseStats": {
+          "atk": 48,
+          "def": 89,
+          "hp": 128
+      },
+      "types": ["inseto", "none"],
+      "fastMoves": ["PICADA", "INVESTIDA"],
+      "chargedMoves": ["INSISTÊNCIA"],
+      "defaultIVs": {
+          "cp500": [40, 15, 15, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 666,
+      "speciesName": "Vivillon",
+      "speciesId": "vivillon",
+      "baseStats": {
+          "atk": 176,
+          "def": 103,
+          "hp": 190
+      },
+      "types": ["inseto", "voador"],
+      "fastMoves": ["PICADA", "LUFADA_DE_VENTO", "IRA_DE_INSETO"],
+      "chargedMoves": ["BUG_BUZZ", "ÁS_DOS_ARES", "BOLA_DE_ENERGIA", "FURACÃO"],
+      "defaultIVs": {
+          "cp500": [10, 6, 15, 7],
+          "cp1500": [30.5, 5, 14, 9],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 667,
+      "speciesName": "Litleo",
+      "speciesId": "litleo",
+      "baseStats": {
+          "atk": 139,
+          "def": 112,
+          "hp": 158
+      },
+      "types": ["fogo", "normal"],
+      "fastMoves": ["PRESAS_DE_FOGO", "INVESTIDA", "BRASA"],
+      "chargedMoves": ["ATAQUE_DE_CHAMAS", "LANÇA-CHAMAS", "MASTIGADA"],
+      "defaultIVs": {
+          "cp500": [13, 10, 12, 11],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 668,
+      "speciesName": "Pyroar",
+      "speciesId": "pyroar",
+      "baseStats": {
+          "atk": 221,
+          "def": 149,
+          "hp": 200
+      },
+      "types": ["fogo", "normal"],
+      "fastMoves": ["PRESAS_DE_FOGO", "DESMANTELAR", "BRASA"],
+      "chargedMoves": ["ATAQUE_DE_CHAMAS", "RAIO_SOLAR", "PULSO_SOMBRIO", "SUPERAQUECIMENTO"],
+      "defaultIVs": {
+          "cp500": [6.5, 15, 15, 14],
+          "cp1500": [19.5, 11, 12, 14],
+          "cp2500": [36, 7, 12, 14]
+      }
+  }, {
+      "dex": 668,
+      "speciesName": "Pyroar_female",
+      "speciesId": "pyroar_female",
+      "baseStats": {
+          "atk": 221,
+          "def": 149,
+          "hp": 200
+      },
+      "types": ["fogo", "normal"],
+      "fastMoves": ["PRESAS_DE_FOGO", "DESMANTELAR"],
+      "chargedMoves": ["ATAQUE_DE_CHAMAS", "RAIO_SOLAR", "PULSO_SOMBRIO", "SUPERAQUECIMENTO"],
+      "defaultIVs": {
+          "cp500": [6.5, 15, 15, 14],
+          "cp1500": [19.5, 11, 12, 14],
+          "cp2500": [36, 7, 12, 14]
+      }
+  }, {
+      "dex": 669,
+      "speciesName": "Flabebe",
+      "speciesId": "flabebe",
+      "baseStats": {
+          "atk": 108,
+          "def": 120,
+          "hp": 127
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["CHICOTE_DE_CIPÓ", "INVESTIDA"],
+      "chargedMoves": ["CLARÃO_DESLUMBRANTE", "NEVASCA_DE_PÉTALAS", "PSÍQUICO"],
+      "defaultIVs": {
+          "cp500": [18, 8, 9, 13],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 670,
+      "speciesName": "Floette",
+      "speciesId": "floette",
+      "baseStats": {
+          "atk": 136,
+          "def": 151,
+          "hp": 144
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["CHICOTE_DE_CIPÓ", "INVESTIDA"],
+      "chargedMoves": ["CLARÃO_DESLUMBRANTE", "NEVASCA_DE_PÉTALAS", "PSÍQUICO"],
+      "defaultIVs": {
+          "cp500": [12.5, 7, 5, 14],
+          "cp1500": [40, 13, 13, 14],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 671,
+      "speciesName": "Florges",
+      "speciesId": "florges",
+      "baseStats": {
+          "atk": 212,
+          "def": 244,
+          "hp": 186
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["CHICOTE_DE_CIPÓ", "INVESTIDA", "FOLHA_NAVALHA"],
+      "chargedMoves": ["EXPLOSÃO_LUNAR", "NEVASCA_DE_PÉTALAS", "PSÍQUICO", "VOZ_DESARMANTE"],
+      "defaultIVs": {
+          "cp500": [6, 8, 6, 9],
+          "cp1500": [17, 8, 14, 10],
+          "cp2500": [28, 7, 12, 15]
+      }
+  }, {
+      "dex": 672,
+      "speciesName": "Skiddo",
+      "speciesId": "skiddo",
+      "baseStats": {
+          "atk": 123,
+          "def": 102,
+          "hp": 165
+      },
+      "types": ["planta", "none"],
+      "fastMoves": ["CABEÇADA_ZEN", "ESMAGAMENTO_DE_PEDRAS"],
+      "chargedMoves": ["QUEBRA-TELHA", "DESLIZE_DE_PEDRAS", "BOMBA_DE_SEMENTES"],
+      "defaultIVs": {
+          "cp500": [15, 5, 14, 13],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 673,
+      "speciesName": "Gogoat",
+      "speciesId": "gogoat",
+      "baseStats": {
+          "atk": 196,
+          "def": 146,
+          "hp": 265
+      },
+      "types": ["planta", "none"],
+      "fastMoves": ["CABEÇADA_ZEN", "ESMAGAMENTO_DE_PEDRAS", "CHICOTE_DE_CIPÓ"],
+      "chargedMoves": ["QUEBRA-TELHA", "DESLIZE_DE_PEDRAS", "LÂMINA_DE_FOLHA", "BOMBA_DE_SEMENTES"],
+      "defaultIVs": {
+          "cp500": [6.5, 12, 14, 15],
+          "cp1500": [20, 5, 14, 5],
+          "cp2500": [36.5, 6, 13, 8]
+      }
+  }, {
+      "dex": 674,
+      "speciesName": "Pancham",
+      "speciesId": "pancham",
+      "baseStats": {
+          "atk": 145,
+          "def": 107,
+          "hp": 167
+      },
+      "types": ["lutador", "none"],
+      "fastMoves": ["RASTEIRA", "INVESTIDA"],
+      "chargedMoves": ["MOVIMENTO_BAIXO", "MASTIGADA", "PANCADA_CORPORAL"],
+      "defaultIVs": {
+          "cp500": [13, 5, 10, 9],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 675,
+      "speciesName": "Pangoro",
+      "speciesId": "pangoro",
+      "baseStats": {
+          "atk": 226,
+          "def": 146,
+          "hp": 216
+      },
+      "types": ["lutador", "sombrio"],
+      "fastMoves": ["RASTEIRA", "ROSNADO", "SOCO_PROJÉTIL"],
+      "chargedMoves": ["CORPO-A-CORPO", "TALHO_NOTURNO", "CABEÇA_DE_FERRO", "DESLIZE_DE_PEDRAS"],
+      "defaultIVs": {
+          "cp500": [6.5, 6, 15, 8],
+          "cp1500": [18.5, 8, 15, 15],
+          "cp2500": [33, 8, 13, 11]
+      }
+  }, {
+      "dex": 676,
+      "speciesName": "Furfrou",
+      "speciesId": "furfrou",
+      "baseStats": {
+          "atk": 164,
+          "def": 167,
+          "hp": 181
+      },
+      "types": ["normal", "none"],
+      "fastMoves": ["DESMANTELAR", "MORDIDA", "SOCO_ENGANADOR"],
+      "chargedMoves": ["SURFAR", "PULSO_SOMBRIO", "NÓ_DE_GRAMA"],
+      "defaultIVs": {
+          "cp500": [9, 6, 9, 11],
+          "cp1500": [26, 8, 12, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 677,
+      "speciesName": "Espurr",
+      "speciesId": "espurr",
+      "baseStats": {
+          "atk": 120,
+          "def": 114,
+          "hp": 158
+      },
+      "types": ["psíquico", "none"],
+      "fastMoves": ["CONFUSÃO", "ARRANHÃO"],
+      "chargedMoves": ["CHOQUE_PSÍQUICO", "BOLA_DE_ENERGIA", "PSÍQUICO"],
+      "defaultIVs": {
+          "cp500": [15.5, 5, 12, 6],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 678,
+      "speciesName": "Meowstic (Male)",
+      "speciesId": "meowstic",
+      "baseStats": {
+          "atk": 166,
+          "def": 167,
+          "hp": 179
+      },
+      "types": ["psíquico", "none"],
+      "fastMoves": ["CONFUSÃO", "SOCO_ENGANADOR"],
+      "chargedMoves": ["PSÍQUICO", "BOLA_DE_ENERGIA", "RELÂMPAGO"],
+      "defaultIVs": {
+          "cp500": [9, 5, 6, 12],
+          "cp1500": [26, 7, 15, 11],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 678,
+      "speciesName": "Meowstic (Female)",
+      "speciesId": "meowstic_female",
+      "baseStats": {
+          "atk": 166,
+          "def": 167,
+          "hp": 179
+      },
+      "types": ["psíquico", "none"],
+      "fastMoves": ["CONFUSÃO", "ENCANTAR"],
+      "chargedMoves": ["PSÍQUICO", "BOLA_DE_ENERGIA", "BOLA_SOMBRIA"],
+      "defaultIVs": {
+          "cp500": [9, 5, 6, 12],
+          "cp1500": [26, 7, 15, 11],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 679,
+      "speciesName": "Honedge",
+      "speciesId": "honedge",
+      "baseStats": {},
+      "types": ["aço", "fantasma"],
+      "fastMoves": ["INVESTIDA", "CORTADOR_DE_FÚRIA"],
+      "chargedMoves": ["CABEÇA_DE_FERRO", "GIROBOLA"],
+      "defaultIVs": {
+          "cp500": [40, 15, 15, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 680,
+      "speciesName": "Doublade",
+      "speciesId": "doublade",
+      "baseStats": {},
+      "types": ["aço", "fantasma"],
+      "fastMoves": ["CORTE_PSÍQUICO", "CORTADOR_DE_FÚRIA"],
+      "chargedMoves": ["CABEÇA_DE_FERRO", "GIROBOLA"],
+      "defaultIVs": {
+          "cp500": [40, 15, 15, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 681,
+      "speciesName": "Aegislash",
+      "speciesId": "aegislash",
+      "baseStats": {
+          "atk": 97,
+          "def": 291,
+          "hp": 155
+      },
+      "types": ["aço", "fantasma"],
+      "fastMoves": ["CORTE_PSÍQUICO", "CORTADOR_DE_FÚRIA"],
+      "chargedMoves": ["CANHÃO_DE_FLASH", "GIROBOLA", "BOLA_SOMBRIA"],
+      "defaultIVs": {
+          "cp500": [12, 5, 14, 12],
+          "cp1500": [36.5, 14, 15, 14],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 682,
+      "speciesName": "Spritzee",
+      "speciesId": "spritzee",
+      "baseStats": {
+          "atk": 110,
+          "def": 113,
+          "hp": 186
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["ENCANTAR", "CARGA_DE_RAIO"],
+      "chargedMoves": ["BEIJO_DRENANTE", "RELÂMPAGO"],
+      "defaultIVs": {
+          "cp500": [14.5, 11, 14, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 683,
+      "speciesName": "Aromatisse",
+      "speciesId": "aromatisse",
+      "baseStats": {
+          "atk": 173,
+          "def": 150,
+          "hp": 226
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["ENCANTAR", "CARGA_DE_RAIO"],
+      "chargedMoves": ["EXPLOSÃO_LUNAR", "RELÂMPAGO", "PSÍQUICO", "BEIJO_DRENANTE"],
+      "defaultIVs": {
+          "cp500": [8, 8, 9, 14],
+          "cp1500": [23.5, 8, 14, 11],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 684,
+      "speciesName": "Swirlix",
+      "speciesId": "swirlix",
+      "baseStats": {
+          "atk": 109,
+          "def": 119,
+          "hp": 158
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["INVESTIDA"],
+      "chargedMoves": ["BEIJO_DRENANTE", "BOLA_DE_ENERGIA"],
+      "defaultIVs": {
+          "cp500": [16, 8, 10, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 685,
+      "speciesName": "Slurpuff",
+      "speciesId": "slurpuff",
+      "baseStats": {
+          "atk": 168,
+          "def": 163,
+          "hp": 193
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["INVESTIDA", "ENCANTAR"],
+      "chargedMoves": ["JOGO_DURO", "BOLA_DE_ENERGIA", "LANÇA-CHAMAS", "BEIJO_DRENANTE"],
+      "defaultIVs": {
+          "cp500": [8.5, 8, 13, 9],
+          "cp1500": [25.5, 5, 14, 10],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 686,
+      "speciesName": "Inkay",
+      "speciesId": "inkay",
+      "baseStats": {
+          "atk": 98,
+          "def": 95,
+          "hp": 142
+      },
+      "types": ["sombrio", "psíquico"],
+      "fastMoves": ["BICADA", "INVESTIDA"],
+      "chargedMoves": ["FEIXE_PSÍQUICO", "TALHO_NOTURNO"],
+      "defaultIVs": {
+          "cp500": [21, 6, 12, 11],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 687,
+      "speciesName": "Malamar",
+      "speciesId": "malamar",
+      "baseStats": {
+          "atk": 177,
+          "def": 165,
+          "hp": 200
+      },
+      "types": ["sombrio", "psíquico"],
+      "fastMoves": ["BICADA", "CORTE_PSÍQUICO"],
+      "chargedMoves": ["FEIXE_PSÍQUICO", "JOGO_SUJO", "SUPERPODER", "HIPER-RAIO"],
+      "defaultIVs": {
+          "cp500": [8, 8, 9, 11],
+          "cp1500": [24, 6, 13, 5],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 688,
+      "speciesName": "Binacle",
+      "speciesId": "binacle",
+      "baseStats": {
+          "atk": 96,
+          "def": 120,
+          "hp": 123
+      },
+      "types": ["pedra", "água"],
+      "fastMoves": ["ARRANHÃO", "TAPA_DE_LAMA"],
+      "chargedMoves": ["PODER_ANCESTRAL", "GOLPE_CRUZADO", "CAVAR"],
+      "defaultIVs": {
+          "cp500": [20.5, 5, 10, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 689,
+      "speciesName": "Barbaracle",
+      "speciesId": "barbaracle",
+      "baseStats": {
+          "atk": 194,
+          "def": 205,
+          "hp": 176
+      },
+      "types": ["pedra", "água"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "TAPA_DE_LAMA", "CORTADOR_DE_FÚRIA"],
+      "chargedMoves": ["QUEBRA-CRÂNIO", "GOLPE_CRUZADO", "GUME_DE_PEDRA", "NÓ_DE_GRAMA"],
+      "defaultIVs": {
+          "cp500": [7, 5, 13, 13],
+          "cp1500": [20.5, 5, 15, 13],
+          "cp2500": [36.5, 12, 12, 15]
+      }
+  }, {
+      "dex": 690,
+      "speciesName": "Skrelp",
+      "speciesId": "skrelp",
+      "baseStats": {
+          "atk": 109,
+          "def": 109,
+          "hp": 137
+      },
+      "types": ["veneno", "água"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "ÁCIDO"],
+      "chargedMoves": ["AQUA_CAUDA", "PULSO_D'ÁGUA", "TWISTER", "BOMBA_DE_LODO"],
+      "defaultIVs": {
+          "cp500": [18, 5, 12, 14],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 691,
+      "speciesName": "Dragalge",
+      "speciesId": "dragalge",
+      "baseStats": {
+          "atk": 177,
+          "def": 207,
+          "hp": 163
+      },
+      "types": ["veneno", "dragão"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "ÁCIDO", "CAUDA_DO_DRAGÃO"],
+      "chargedMoves": ["JATO_D'ÁGUA", "AQUA_CAUDA", "ULTRAJE", "TIRO_DE_SUJEIRA"],
+      "defaultIVs": {
+          "cp500": [8, 6, 14, 6],
+          "cp1500": [23.5, 5, 7, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 692,
+      "speciesName": "Clauncher",
+      "speciesId": "clauncher",
+      "baseStats": {
+          "atk": 108,
+          "def": 117,
+          "hp": 137
+      },
+      "types": ["água", "none"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "DERRUBADA"],
+      "chargedMoves": ["PULSO_D'ÁGUA", "MARTELO_CARANGUEJO", "AQUA_JATO"],
+      "defaultIVs": {
+          "cp500": [18, 6, 5, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 693,
+      "speciesName": "Clawitzer",
+      "speciesId": "clawitzer",
+      "baseStats": {
+          "atk": 221,
+          "def": 171,
+          "hp": 174
+      },
+      "types": ["água", "none"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "DERRUBADA"],
+      "chargedMoves": ["PULSO_D'ÁGUA", "PULSO_SOMBRIO", "RAIO_CONGELANTE", "MARTELO_CARANGUEJO"],
+      "defaultIVs": {
+          "cp500": [7, 5, 7, 9],
+          "cp1500": [20, 7, 10, 13],
+          "cp2500": [37, 6, 9, 14]
+      }
+  }, {
+      "dex": 694,
+      "speciesName": "Helioptile",
+      "speciesId": "helioptile",
+      "baseStats": {
+          "atk": 115,
+          "def": 78,
+          "hp": 127
+      },
+      "types": ["elétrico", "normal"],
+      "fastMoves": ["ATAQUE_RÁPIDO", "TROVOADA_DE_CHOQUES"],
+      "chargedMoves": ["CARGA_PARABÓLICA", "TREMOR", "DESCARGA"],
+      "defaultIVs": {
+          "cp500": [20, 8, 13, 14],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 695,
+      "speciesName": "Heliolisk",
+      "speciesId": "heliolisk",
+      "baseStats": {
+          "atk": 219,
+          "def": 168,
+          "hp": 158
+      },
+      "types": ["elétrico", "normal"],
+      "fastMoves": ["ATAQUE_RÁPIDO", "TROCA_ELÉTRICA", "TAPA_DE_LAMA"],
+      "chargedMoves": ["CARGA_PARABÓLICA", "TREMOR", "RELÂMPAGO", "NÓ_DE_GRAMA"],
+      "defaultIVs": {
+          "cp500": [7, 13, 14, 11],
+          "cp1500": [21.5, 6, 12, 9],
+          "cp2500": [37.5, 14, 14, 15]
+      }
+  }, {
+      "dex": 696,
+      "speciesName": "Tyrunt",
+      "speciesId": "tyrunt",
+      "baseStats": {
+          "atk": 158,
+          "def": 123,
+          "hp": 151
+      },
+      "types": ["pedra", "dragão"],
+      "fastMoves": ["CAUDA_DO_DRAGÃO", "INVESTIDA"],
+      "chargedMoves": ["PISOTEAR", "PODER_ANCESTRAL", "GARRA_DE_DRAGÃO"],
+      "defaultIVs": {
+          "cp500": [11, 9, 15, 14],
+          "cp1500": [38.5, 5, 13, 14],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 697,
+      "speciesName": "Tyrantrum",
+      "speciesId": "tyrantrum",
+      "baseStats": {
+          "atk": 227,
+          "def": 191,
+          "hp": 193
+      },
+      "types": ["pedra", "dragão"],
+      "fastMoves": ["CAUDA_DO_DRAGÃO", "ENCANTAR", "LANÇAMENTO_DE_ROCHA"],
+      "chargedMoves": ["MASTIGADA", "GUME_DE_PEDRA", "ULTRAJE", "TERREMOTO"],
+      "defaultIVs": {
+          "cp500": [6, 9, 11, 14],
+          "cp1500": [17.5, 6, 12, 13],
+          "cp2500": [29.5, 8, 9, 11]
+      }
+  }, {
+      "dex": 698,
+      "speciesName": "Amaura",
+      "speciesId": "amaura",
+      "baseStats": {
+          "atk": 124,
+          "def": 109,
+          "hp": 184
+      },
+      "types": ["pedra", "gelo"],
+      "fastMoves": ["NEVE_EM_PÓ", "RESPIRAÇÃO_DE_GELO"],
+      "chargedMoves": ["ESFERA_CLIMÁTICA_(GELO)", "PODER_ANCESTRAL", "RAIO_AURORA", "RELÂMPAGO"],
+      "defaultIVs": {
+          "cp500": [13.5, 8, 15, 12],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 699,
+      "speciesName": "Aurorus",
+      "speciesId": "aurorus",
+      "baseStats": {
+          "atk": 186,
+          "def": 163,
+          "hp": 265
+      },
+      "types": ["pedra", "gelo"],
+      "fastMoves": ["NEVE_EM_PÓ", "RESPIRAÇÃO_DE_GELO", "LANÇAMENTO_DE_ROCHA"],
+      "chargedMoves": ["ESFERA_CLIMÁTICA_(GELO)", "PODER_ANCESTRAL", "NEVASCA", "RELÂMPAGO", "HIPER-RAIO"],
+      "defaultIVs": {
+          "cp500": [6.5, 14, 12, 14],
+          "cp1500": [20, 6, 9, 12],
+          "cp2500": [34.5, 9, 14, 15]
+      }
+  }, {
+      "dex": 700,
+      "speciesName": "Sylveon",
+      "speciesId": "sylveon",
+      "baseStats": {
+          "atk": 203,
+          "def": 205,
+          "hp": 216
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["ENCANTAR", "ATAQUE_RÁPIDO"],
+      "chargedMoves": ["EXPLOSÃO_LUNAR", "CLARÃO_DESLUMBRANTE", "BEIJO_DRENANTE"],
+      "defaultIVs": {
+          "cp500": [6, 15, 13, 10],
+          "cp1500": [18.5, 5, 8, 8],
+          "cp2500": [30, 7, 8, 15]
+      }
+  }, {
+      "dex": 701,
+      "speciesName": "Hawlucha",
+      "speciesId": "hawlucha",
+      "baseStats": {
+          "atk": 195,
+          "def": 153,
+          "hp": 186
+      },
+      "types": ["lutador", "voador"],
+      "fastMoves": ["ATAQUE_DE_ASA", "RASTEIRA", "GOLPE_ENVENENADO"],
+      "chargedMoves": ["APERTO_VOADOR", "ATAQUE_DO_CÉU", "TESOURA_X", "SOCO_EMPODERADOR"],
+      "defaultIVs": {
+          "cp500": [7.5, 15, 14, 10],
+          "cp1500": [23.5, 5, 10, 9],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 702,
+      "speciesName": "Dedenne",
+      "speciesId": "dedenne",
+      "baseStats": {
+          "atk": 164,
+          "def": 134,
+          "hp": 167
+      },
+      "types": ["elétrico", "fada"],
+      "fastMoves": ["INVESTIDA", "TROVOADA_DE_CHOQUES"],
+      "chargedMoves": ["CARGA_PARABÓLICA", "DESCARGA", "JOGO_DURO"],
+      "defaultIVs": {
+          "cp500": [10, 8, 11, 13],
+          "cp1500": [32.5, 5, 9, 10],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 703,
+      "speciesName": "Carbink",
+      "speciesId": "carbink",
+      "baseStats": {
+          "atk": 95,
+          "def": 285,
+          "hp": 137
+      },
+      "types": ["pedra", "fada"],
+      "fastMoves": ["INVESTIDA", "LANÇAMENTO_DE_ROCHA"],
+      "chargedMoves": ["DESLIZE_DE_PEDRAS", "EXPLOSÃO_LUNAR", "GEMA_PODEROSA"],
+      "defaultIVs": {
+          "cp500": [13.5, 5, 8, 9],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 704,
+      "speciesName": "Goomy",
+      "speciesId": "goomy",
+      "baseStats": {
+          "atk": 101,
+          "def": 112,
+          "hp": 128
+      },
+      "types": ["dragão", "none"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "INVESTIDA"],
+      "chargedMoves": ["PULSO_DO_DRAGÃO", "ONDA_DE_LAMA", "ÁGUA_BARRENTA"],
+      "defaultIVs": {
+          "cp500": [20.5, 6, 10, 6],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 705,
+      "speciesName": "Sliggoo",
+      "speciesId": "sliggoo",
+      "baseStats": {
+          "atk": 159,
+          "def": 176,
+          "hp": 169
+      },
+      "types": ["dragão", "none"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "INVESTIDA"],
+      "chargedMoves": ["PULSO_DO_DRAGÃO", "ONDA_DE_LAMA", "ÁGUA_BARRENTA", "PULSO_D'ÁGUA"],
+      "defaultIVs": {
+          "cp500": [9, 7, 13, 15],
+          "cp1500": [27.5, 5, 15, 10],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 706,
+      "speciesName": "Goodra",
+      "speciesId": "goodra",
+      "baseStats": {
+          "atk": 220,
+          "def": 242,
+          "hp": 207
+      },
+      "types": ["dragão", "none"],
+      "fastMoves": ["REVOLVER_D'ÁGUA", "SOPRO_DO_DRAGÃO"],
+      "chargedMoves": ["METEORO_DO_DRAGÃO", "ONDA_DE_LAMA", "ÁGUA_BARRENTA", "CHICOTE_PODEROSO"],
+      "defaultIVs": {
+          "cp500": [5.5, 7, 8, 15],
+          "cp1500": [15.5, 8, 11, 15],
+          "cp2500": [26.5, 6, 9, 11]
+      }
+  }, {
+      "dex": 707,
+      "speciesName": "Klefki",
+      "speciesId": "klefki",
+      "baseStats": {
+          "atk": 160,
+          "def": 179,
+          "hp": 149
+      },
+      "types": ["aço", "fada"],
+      "fastMoves": ["ABISMAR", "INVESTIDA"],
+      "chargedMoves": ["CANHÃO_DE_FLASH", "JOGO_DURO", "BEIJO_DRENANTE", "JOGO_SUJO"],
+      "defaultIVs": {
+          "cp500": [9.5, 9, 10, 13],
+          "cp1500": [29, 6, 15, 8],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 708,
+      "speciesName": "Phantump",
+      "speciesId": "phantump",
+      "baseStats": {
+          "atk": 125,
+          "def": 103,
+          "hp": 125
+      },
+      "types": ["fantasma", "planta"],
+      "fastMoves": ["ABISMAR", "INVESTIDA"],
+      "chargedMoves": ["BOMBA_DE_SEMENTES", "BOLA_SOMBRIA", "JOGO_SUJO"],
+      "defaultIVs": {
+          "cp500": [16.5, 8, 13, 14],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 709,
+      "speciesName": "Trevenant",
+      "speciesId": "trevenant",
+      "baseStats": {
+          "atk": 201,
+          "def": 154,
+          "hp": 198
+      },
+      "types": ["fantasma", "planta"],
+      "fastMoves": ["GARRA_SOMBRIA", "SOCO_ENGANADOR"],
+      "chargedMoves": ["BOMBA_DE_SEMENTES", "BOLA_SOMBRIA", "JOGO_SUJO"],
+      "defaultIVs": {
+          "cp500": [7.5, 5, 10, 8],
+          "cp1500": [21.5, 7, 11, 14],
+          "cp2500": [38.5, 14, 15, 15]
+      }
+  }, {
+      "dex": 710,
+      "speciesName": "Pumpkaboo",
+      "speciesId": "pumpkaboo",
+      "baseStats": {},
+      "types": ["fantasma", "planta"],
+      "fastMoves": ["ABISMAR", "FOLHA_NAVALHA"],
+      "chargedMoves": ["NÓ_DE_GRAMA", "FURTIVIDADE_NAS_SOMBRAS", "JOGO_SUJO", "TERREMOTO"],
+      "defaultIVs": {
+          "cp500": [40, 15, 15, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 711,
+      "speciesName": "Gourgeist",
+      "speciesId": "gourgeist",
+      "baseStats": {},
+      "types": ["fantasma", "planta"],
+      "fastMoves": ["FEITIÇO", "FOLHA_NAVALHA"],
+      "chargedMoves": ["BOMBA_DE_SEMENTES", "BOLA_SOMBRIA", "JOGO_SUJO", "RAJADA_DE_FOGO"],
+      "defaultIVs": {
+          "cp500": [40, 15, 15, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 712,
+      "speciesName": "Bergmite",
+      "speciesId": "bergmite",
+      "baseStats": {
+          "atk": 117,
+          "def": 120,
+          "hp": 146
+      },
+      "types": ["gelo", "none"],
+      "fastMoves": ["MORDIDA", "INVESTIDA"],
+      "chargedMoves": ["MASTIGADA", "VENTO_CONGELANTE"],
+      "defaultIVs": {
+          "cp500": [15.5, 7, 11, 15],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 713,
+      "speciesName": "Avalugg",
+      "speciesId": "avalugg",
+      "baseStats": {
+          "atk": 196,
+          "def": 240,
+          "hp": 216
+      },
+      "types": ["gelo", "none"],
+      "fastMoves": ["MORDIDA", "PRESA_DE_GELO"],
+      "chargedMoves": ["MASTIGADA", "AVALANCHE", "TERREMOTO", "PANCADA_CORPORAL", "CASACO_ESPELHADO"],
+      "defaultIVs": {
+          "cp500": [6, 9, 6, 12],
+          "cp1500": [17.5, 5, 12, 8],
+          "cp2500": [29.5, 5, 12, 5]
+      }
+  }, {
+      "dex": 714,
+      "speciesName": "Noibat",
+      "speciesId": "noibat",
+      "baseStats": {
+          "atk": 83,
+          "def": 73,
+          "hp": 120
+      },
+      "types": ["voador", "dragão"],
+      "fastMoves": ["ATAQUE_DE_ASA", "MORDIDA"],
+      "chargedMoves": ["PULSO_DO_DRAGÃO", "CORTADOR_DE_AR", "ONDA_DE_CALOR"],
+      "defaultIVs": {
+          "cp500": [30.5, 5, 10, 13],
+          "cp1500": [40, 15, 15, 15],
+          "cp2500": [40, 15, 15, 15]
+      }
+  }, {
+      "dex": 715,
+      "speciesName": "Noivern",
+      "speciesId": "noivern",
+      "baseStats": {
+          "atk": 205,
+          "def": 175,
+          "hp": 198
+      },
+      "types": ["voador", "dragão"],
+      "fastMoves": ["GOLPE_DE_AR", "MORDIDA"],
+      "chargedMoves": ["METEORO_DO_DRAGÃO", "FURACÃO", "ONDA_DE_CALOR", "PSÍQUICO"],
+      "defaultIVs": {
+          "cp500": [7, 5, 8, 8],
+          "cp1500": [20, 6, 15, 8],
+          "cp2500": [37, 5, 10, 15]
+      }
+  }, {
+      "dex": 716,
+      "speciesName": "Xerneas",
+      "speciesId": "xerneas",
+      "baseStats": {
+          "atk": 275,
+          "def": 203,
+          "hp": 270
+      },
+      "types": ["fada", "none"],
+      "fastMoves": ["INVESTIDA", "CABEÇADA_ZEN"],
+      "chargedMoves": ["EXPLOSÃO_LUNAR", "MEGACHIFRE", "CORPO-A-CORPO", "GIGA_IMPACTO", "TROVÃO"],
+      "defaultIVs": {
+          "cp500": [4, 10, 15, 12],
+          "cp1500": [12, 5, 13, 15],
+          "cp2500": [20, 10, 10, 13]
+      }
+  }, {
+      "dex": 717,
+      "speciesName": "Yveltal",
+      "speciesId": "yveltal",
+      "baseStats": {
+          "atk": 250,
+          "def": 185,
+          "hp": 246
+      },
+      "types": ["sombrio", "voador"],
+      "fastMoves": ["SOCO_ENGANADOR", "ROSNADO", "LUFADA_DE_VENTO"],
+      "chargedMoves": ["PULSO_SOMBRIO", "FURACÃO", "EXPLOSÃO_FOCALIZADA", "HIPER-RAIO", "PSÍQUICO"],
+      "defaultIVs": {
+          "cp500": [5, 13, 13, 9],
+          "cp1500": [14.5, 8, 11, 11],
+          "cp2500": [24, 5, 14, 13]
+      }
+  }, {
+      "dex": 718,
+      "speciesName": "zygarde",
+      "speciesId": "Zygarde",
+      "baseStats": {
+          "atk": 203,
+          "def": 232,
+          "hp": 239
+      },
+      "types": ["dragão", "terra"],
+      "fastMoves": ["CAUDA_DO_DRAGÃO", "MORDIDA", "CABEÇADA_ZEN"],
+      "chargedMoves": ["ULTRAJE", "TERREMOTO", "MASTIGADA", "HIPER-RAIO", "TREMOR"],
+      "defaultIVs": {
+          "cp500": [5.5, 14, 14, 7],
+          "cp1500": [16, 10, 12, 10],
+          "cp2500": [27, 8, 13, 8]
+      }
+    },
+    {
         "dex": 808,
         "speciesName": "Meltan",
         "speciesId": "meltan",
@@ -15686,7 +16881,7 @@
     }],
     "moves": [{
         "moveId": "ÁCIDO",
-        "name": "ÁCIDO",
+        "name": "Acid",
         "type": "veneno",
         "namePt": "Ácido",
         "typePt": "veneno",
@@ -15696,7 +16891,7 @@
         "cooldown": 1000
     }, {
         "moveId": "SPRAY_ÁCIDO",
-        "name": "ÁCIDO Spray",
+        "name": "Acid Spray",
         "type": "veneno",
         "namePt": "Spray Ácido",
         "typePt": "veneno",
@@ -15718,9 +16913,25 @@
         "energy": 45,
         "energyGain": 0,
         "cooldown": 500
-    }, {
-        "moveId": "AIR_CORTARTER",
-        "name": "Air CORTARter",
+    },
+    {
+      "moveId": "EXPLOSÃO_AÉREA",
+      "name": "Aeroblast",
+      "type": "flying",
+      "namePt": "Explosão Aérea",
+      "typePt": "voador",
+      "power": 170,
+      "energy": 75,
+      "energyGain": 0,
+      "cooldown": 500,
+      "buffs": [2, 0],
+      "buffTarget": "self",
+      "buffTargetPt": "si",
+      "buffApplyChance": ".125"
+    },
+    {
+        "moveId": "CORTADOR_DE_AR",
+        "name": "Air Cutter",
         "type": "voador",
         "namePt": "Cortador De Ar",
         "typePt": "voador",
@@ -15774,7 +16985,7 @@
         "cooldown": 500
     }, {
         "moveId": "ABISMAR",
-        "name": "ABISMAR",
+        "name": "Astonish",
         "type": "fantasma",
         "namePt": "Abismar",
         "typePt": "fantasma",
@@ -16422,7 +17633,11 @@
         "power": 70,
         "energy": 50,
         "energyGain": 0,
-        "cooldown": 500
+        "cooldown": 500,
+        "buffs": [1, 0],
+        "buffTarget": "self",
+        "buffTargetPt": "si",
+        "buffApplyChance": "1"
     }, {
         "moveId": "RODA_DE_FOGO",
         "name": "Flame Wheel",
@@ -16815,7 +18030,7 @@
         "cooldown": 500
     }, {
         "moveId": "FURACÃO",
-        "name": "FURACÃO",
+        "name": "Hurricane",
         "type": "voador",
         "namePt": "Furacão",
         "typePt": "voador",
@@ -16837,7 +18052,7 @@
         "moveId": "JATO_D'ÁGUA",
         "name": "Hydro Pump",
         "type": "água",
-        "namePt": "Jato D'Água", 
+        "namePt": "Jato D'Água",
         "typePt": "água",
         "power": 130,
         "energy": 75,
@@ -17050,7 +18265,23 @@
         "energy": 40,
         "energyGain": 0,
         "cooldown": 500
-    }, {
+    },
+    {
+      "moveId": "ESTOCADA",
+      "name": "Lunge",
+      "type": "bug",
+      "namePt": "Estocada",
+      "typePt": "inseto",
+      "power": 60,
+      "energy": 45,
+      "energyGain": 0,
+      "cooldown": 500,
+      "buffs": [-1, 0],
+      "buffTarget": "opponent",
+      "buffTargetPt": "o oponente",
+      "buffApplyChance": "1"
+    },
+    {
         "moveId": "BOMBA_ÍMÃ",
         "name": "Magnet Bomb",
         "type": "aço",
@@ -17428,7 +18659,7 @@
         "cooldown": 1500
     }, {
         "moveId": "FEIXE_PSÍQUICO",
-        "name": "FEIXE_PSÍQUICO",
+        "name": "Psybeam",
         "type": "psíquico",
         "namePt": "Feixe Psíquico",
         "typePt": "psíquico",
@@ -17476,7 +18707,7 @@
         "cooldown": 1000
     }, {
         "moveId": "CHOQUE_PSÍQUICO",
-        "name": "CHOQUE_PSÍQUICO",
+        "name": "Psyshock",
         "type": "psíquico",
         "namePt": "Choque Psíquico",
         "typePt": "psíquico",
@@ -17638,7 +18869,7 @@
         "cooldown": 500
     }, {
         "moveId": "ARRANHÃO",
-        "name": "Arranhão",
+        "name": "Scratch",
         "type": "normal",
         "namePt": "Arranhão",
         "typePt": "normal",
@@ -17947,7 +19178,7 @@
         "energyGain": 0,
         "cooldown": 500
     }, {
-        "moveId": "SWIFT",
+        "moveId": "ATAQUE_VELOZ",
         "name": "Swift",
         "type": "normal",
         "namePt": "Ataque Veloz",
